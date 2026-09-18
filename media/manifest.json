@@ -1,12 +1,20 @@
 [
   {
+    "id": "1",
+    "type": "image",
+    "src": "media/tat1-scorpion.png",
+    "alt": "Black and grey Scorpion (Mortal Kombat) tattoo on the calf",
+    "title": "Scorpion, calf",
+    "style": "blackwork",
+    "featured": true
+  },
+  {
     "id": "014",
     "type": "image",
     "src": "media/rose.svg",
     "alt": "Fine line rose tattoo",
     "title": "Rose, forearm",
-    "style": "fine-line",
-    "featured": true
+    "style": "fine-line"
   },
   {
     "id": "015",

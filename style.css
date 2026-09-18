@@ -236,11 +236,41 @@ section { padding: 48px 20px; }
   border-top: 3px solid var(--ink);
 }
 
-.about-photo {
-  aspect-ratio: 5 / 4;
-  background: var(--card);
-  border: 3px solid var(--ink);
+.about-photo-frame {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+  margin: 0 auto;
 }
+
+.about-photo {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  object-fit: contain;
+  background: #000;
+  border: 3px solid var(--ink);
+  display: block;
+}
+
+.about-photo-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--ink);
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--mustard);
+}
+
+.about-photo-nav.prev { left: 12px; }
+.about-photo-nav.next { right: 12px; }
+
+.about-photo-nav:hover, .about-photo-nav:focus-visible { background: var(--red); color: var(--card); }
 
 .about h2 { font-size: 1.8rem; margin: 0 0 10px; font-weight: 800; }
 .about p { max-width: 48ch; }
@@ -352,7 +382,7 @@ section { padding: 48px 20px; }
   .board { grid-template-columns: repeat(4, 1fr); gap: 22px; }
 
   .about { flex-direction: row; align-items: center; gap: 56px; }
-  .about-photo, .about-copy { flex: 1; }
+  .about-photo-frame, .about-copy { flex: 1; }
 }
 
 @media (min-width: 1080px) {

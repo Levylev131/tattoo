@@ -52,8 +52,25 @@ function renderBoard(works, filter) {
   shown.forEach(piece => board.appendChild(pieceCard(piece)));
 }
 
+const aboutPhotos = ['media/manny-profile.jpg', 'media/manny-profile2.jpg'];
+let aboutPhotoIndex = 0;
+
+function renderAboutPhoto() {
+  document.getElementById('about-photo').src = aboutPhotos[aboutPhotoIndex];
+}
+
 async function init() {
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  renderAboutPhoto();
+  document.getElementById('about-photo-prev').addEventListener('click', () => {
+    aboutPhotoIndex = (aboutPhotoIndex - 1 + aboutPhotos.length) % aboutPhotos.length;
+    renderAboutPhoto();
+  });
+  document.getElementById('about-photo-next').addEventListener('click', () => {
+    aboutPhotoIndex = (aboutPhotoIndex + 1) % aboutPhotos.length;
+    renderAboutPhoto();
+  });
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
   document.getElementById('lightbox').addEventListener('click', (e) => {
     if (e.target.id === 'lightbox') closeLightbox();
@@ -68,7 +85,7 @@ async function init() {
   if (featured) {
     document.getElementById('featured-img').src = featured.src;
     document.getElementById('featured-img').alt = featured.alt;
-    document.getElementById('featured-tag').textContent = `piece #${featured.id}`;
+    document.getElementById('featured-tag').textContent = `Piece ${featured.id}`;
   }
 
   const styleById = Object.fromEntries(styles.map(s => [s.id, s]));
