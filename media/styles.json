@@ -1,0 +1,8 @@
+[
+  { "id": "fine-line", "label": "Fine line", "desc": "Delicate single-needle work — minimal, precise, made to age well." },
+  { "id": "blackwork", "label": "Blackwork", "desc": "Bold solid black — heavy contrast, strong shapes that read from across the room." },
+  { "id": "traditional", "label": "Traditional American", "desc": "Bold outlines, classic flash subjects — built to last decades." },
+  { "id": "color", "label": "Fine color", "desc": "Full color realism and illustrative work with smooth blending." },
+  { "id": "script", "label": "Script & lettering", "desc": "Names, dates, and words — clean and legible at any size." },
+  { "id": "geometric", "label": "Geometric & dotwork", "desc": "Symmetry, patterns, and stippling — built with a steady hand and a lot of patience." }
+]

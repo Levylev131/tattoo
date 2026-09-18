@@ -1,0 +1,67 @@
+[
+  {
+    "id": "014",
+    "type": "image",
+    "src": "media/rose.svg",
+    "alt": "Fine line rose tattoo",
+    "title": "Rose, forearm",
+    "style": "fine-line",
+    "featured": true
+  },
+  {
+    "id": "015",
+    "type": "image",
+    "src": "media/snake.svg",
+    "alt": "Blackwork snake tattoo",
+    "title": "Coiled snake, calf",
+    "style": "blackwork"
+  },
+  {
+    "id": "016",
+    "type": "image",
+    "src": "media/swallow.svg",
+    "alt": "Traditional swallow tattoo",
+    "title": "Swallow pair, chest",
+    "style": "traditional"
+  },
+  {
+    "id": "017",
+    "type": "image",
+    "src": "media/dagger.svg",
+    "alt": "Traditional dagger tattoo",
+    "title": "Dagger, upper arm",
+    "style": "traditional"
+  },
+  {
+    "id": "018",
+    "type": "image",
+    "src": "media/anchor.svg",
+    "alt": "Traditional anchor tattoo",
+    "title": "Anchor, shoulder",
+    "style": "traditional"
+  },
+  {
+    "id": "019",
+    "type": "image",
+    "src": "media/mandala.svg",
+    "alt": "Geometric dotwork mandala tattoo",
+    "title": "Mandala, shoulder blade",
+    "style": "geometric"
+  },
+  {
+    "id": "020",
+    "type": "image",
+    "src": "media/colorflower.svg",
+    "alt": "Color flower tattoo",
+    "title": "Peony, thigh",
+    "style": "color"
+  },
+  {
+    "id": "021",
+    "type": "image",
+    "src": "media/script.svg",
+    "alt": "Script lettering tattoo",
+    "title": "Lettering, ribs",
+    "style": "script"
+  }
+]

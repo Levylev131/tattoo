@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manny's Tats — Tattoo artist</title>
+<meta name="description" content="Manny's Tats — custom tattoos, fine line, blackwork, traditional, color, script, and geometric work. See the portfolio and book an appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Archivo:ital,wght@0,400;0,600;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="wordmark">Manny's Tats</a>
+  <nav class="site-nav">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#book">Book</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="featured" id="featured" aria-label="Featured piece">
+    <div class="featured-media">
+      <img id="featured-img" src="" alt="" width="400" height="480">
+    </div>
+    <div class="featured-copy">
+      <p class="tag" id="featured-tag">piece 000</p>
+      <h1>Custom tattoos, worked out with you before the needle ever touches skin.</h1>
+      <p class="lede">Manny's Tats — booking fine line, blackwork, traditional, color, script, and geometric pieces.</p>
+      <a href="#book" class="btn">Start a piece</a>
+    </div>
+  </section>
+
+  <section class="work" id="work" aria-label="Portfolio">
+    <div class="section-head">
+      <h2>The work</h2>
+      <p>Tap a style to filter, or browse everything Manny's tattooed.</p>
+    </div>
+
+    <div class="chips" id="chips" role="group" aria-label="Filter by style">
+      <button class="chip is-active" data-style="all" type="button">All work</button>
+    </div>
+    <p class="chip-desc" id="chip-desc" aria-live="polite"></p>
+
+    <div class="board" id="board"></div>
+  </section>
+
+  <section class="about" id="about" aria-label="About Manny">
+    <div class="about-photo" aria-hidden="true"></div>
+    <div class="about-copy">
+      <h2>About Manny</h2>
+      <p>Manny's been tattooing for years and still treats every piece like the first one: a real conversation about size, placement, and what's actually going to hold up on skin for the next twenty years — then a design built around that, not off a shelf.</p>
+      <p>Walk-ins for small pieces are welcome when there's an open chair. Anything custom gets its own consult first.</p>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-label="Book an appointment">
+    <div class="section-head">
+      <h2>Book a piece</h2>
+      <p>Send the idea, placement, and size — Manny will follow up to set up a consult.</p>
+    </div>
+    <form id="book-form" class="book-form">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email or phone
+        <input type="text" name="contact" required>
+      </label>
+      <label>
+        Style
+        <select name="style" id="book-style">
+          <option value="">No preference</option>
+        </select>
+      </label>
+      <label>
+        Idea, placement, and rough size
+        <textarea name="idea" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Send inquiry</button>
+    </form>
+    <div class="book-direct">
+      <a href="https://instagram.com/mannystats" target="_blank" rel="noopener">@mannystats on Instagram</a>
+      <a href="tel:+10000000000">(000) 000-0000</a>
+      <p>Shop address goes here</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Manny's Tats</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">Close</button>
+  <div class="lightbox-body" id="lightbox-body"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
